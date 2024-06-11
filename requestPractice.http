@@ -1,0 +1,22 @@
+POST http://localhost:3002/api/qrcodes
+Content-Type: application/json
+
+{
+  "title": "코드잇2",
+  "url": "https://codeit.kr"
+}
+
+###
+PATCH http://localhost:3002/api/qrcodes/66603614c63185731e73c9a8
+Content-Type: application/json
+
+{
+	"title" : "코드잇-수정"
+}
+
+###
+DELETE http://localhost:3002/api/qrcodes/66603b19c63185731e73c9de
+
+###
+
+GET http://localhost:3002/api/qrcodes

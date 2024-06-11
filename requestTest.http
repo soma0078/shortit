@@ -1,0 +1,30 @@
+GET http://localhost:3002/api/test-models/
+
+###
+
+POST http://localhost:3002/api/test-models
+Content-Type: application/json
+
+[
+{
+	"title": "test 2",
+	"url": "test url 2"
+},
+{
+	"title": "test 3",
+	"url": "test url 3"
+}
+]
+###
+
+PATCH http://localhost:3002/api/test-models/66605885c1639b153fd1c1a3
+Content-Type: application/json
+
+{
+	"title": "Title - edit",
+	"url": "Url - edit"
+}
+
+###
+
+DELETE http://localhost:3002/api/test-models/666059cac1639b153fd1c1b4
